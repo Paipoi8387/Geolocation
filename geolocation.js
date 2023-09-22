@@ -12,6 +12,8 @@ function successCallback(position){
     // 経度を取得し画面に表示
     var longitude = position.coords.longitude;
     document.getElementById("longitude").innerHTML = longitude;
+    var altitude = position.coords.altitude;
+    document.getElementById("altitude").innerHTML = altitude;
 };
 
 // 取得に失敗した場合の処理
